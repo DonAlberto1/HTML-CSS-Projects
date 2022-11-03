@@ -1,0 +1,32 @@
+<html>
+<head>
+	<style>
+		.anim{width:100px; height:100px;background:#ff0;
+		animation:example 10s infinite;position:absolute;z-index:-1;}
+		@keyframes example{
+		0%{top:0; left:0;transform:rotate(0deg);}
+		25%{top:0; left:calc(100% - 100px);}
+		50%{top:calc(100% - 100px); left:calc(100% - 100px);}
+		75%{top:calc(100% - 100px); left:0;}
+		100%{top:0; left:0;transform:rotate(-360deg);}
+		}
+		.chanim{width:200px; height:150px;background:#f0f;
+		transition:2s
+		}
+		.chanim:hover{
+		transform:rotate(-10deg) translate(1000px; 0);
+		background:#f00}
+		.cube{width:100px;height:100px;background:#00f;transform:scew(100deg;10deg);}
+		.cube:hover{transform:scale(1.5)}
+	</style>
+</head>
+<body>
+<div class="anim">
+</div>
+<div class="chanim">
+<p>Hello World Rotate 90*</p>
+</div>
+<div class="cube">
+<div>
+</body>	
+</html>
